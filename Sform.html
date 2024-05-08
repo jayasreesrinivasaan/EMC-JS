@@ -1,0 +1,64 @@
+<html>
+    <body>
+<head>
+    <link rel="stylesheet" href="Style/Sform.css">
+
+<h1>STUDENT FORM</h1>
+
+<table id="listitem">
+    <tr>
+        <th class="border">Name</th>
+        <td >
+            <input id="name">
+        </td>
+    </tr>
+    <tr>
+        <th class="border">Age</th>
+        <td >
+            <input id="age">
+        </td>
+    </tr>
+    <tr>
+        <th class="border">Gender</th>
+        <td >
+            <input id="gender">
+        </td>
+    </tr>
+    <tr>
+        <th class="border">Course</th>
+        <td >
+            <input id="course">
+        </td>
+    </tr>
+    <tr>
+        <th class="border">E-mail</th>
+        <td >
+            <input id="email">
+        </td>
+    </tr>
+</table><br>
+<button onclick="save">Save</button><br><br>
+</head>
+<table id="show">
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Course</th>
+    <th>Email</th>
+    <th>Action</th>
+</table>
+<script>
+    var listitem = document.getElementById("listitem")
+    var Name = document.getElementById("name")
+    var Age = document.getElementById("age")
+    var Gender = document.getElementById("gender")
+    var Course = document.getElementById("course")
+    var Email = document.getElementById("email")
+    function save()
+    {
+        listitem.textContent = show.textContent
+        
+    }
+</script>
+</body>
+</html>
